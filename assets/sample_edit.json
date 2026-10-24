@@ -1,0 +1,17 @@
+{
+  "allowed_facts": "Alex Rivera. Arizona State University. BS Computer Science, 2026. alex@example.edu. Python. Campus Eats served 200 students. Shuttle Map posted the campus shuttle map. Course project, not an employer.",
+  "must_include": ["Python"],
+  "bank_projects": ["Campus Eats", "Shuttle Map"],
+  "resume_slots": {
+    "NAME": "Alex Rivera",
+    "CONTACT": "alex@example.edu",
+    "SUMMARY": "Computer science student at Arizona State University, graduating 2026. Python.",
+    "EDUCATION": "Arizona State University, BS Computer Science, 2026.",
+    "EXPERIENCE": "\\item Course project -- Builder: Campus Eats served 200 students.",
+    "PROJECTS": "\\item Campus Eats: Built an ordering page. 200 students used it.\n\\item Shuttle Map: Mapped the campus shuttle stops."
+  },
+  "cover_slots": {
+    "ROLE": "I am applying for the software engineer intern role.",
+    "BODY": "I built Campus Eats, which 200 students used, and Shuttle Map for the campus shuttle stops. I study computer science at Arizona State University and graduate in 2026."
+  }
+}

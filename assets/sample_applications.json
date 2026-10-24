@@ -1,0 +1,39 @@
+{
+  "roles": [
+    {
+      "employer": "Stripe",
+      "namespace": "greenhouse",
+      "job_id": "4019283",
+      "url": "https://stripe.com/jobs/listing/4019283",
+      "status": "applied",
+      "quote": "3+ years of production experience",
+      "section": "Requirements",
+      "package_url": "https://example.com/stripe-4019283.html",
+      "overleaf_url": "https://www.overleaf.com/project/sample",
+      "confirmation": "Application submitted",
+      "updated": "2026-10-24"
+    },
+    {
+      "employer": "Stripe",
+      "namespace": "greenhouse",
+      "job_id": "4019284",
+      "url": "https://stripe.com/jobs/listing/4019284",
+      "status": "not a fit",
+      "quote": "Must be located in New York City",
+      "section": "Requirements",
+      "confirmation": "",
+      "updated": "2026-10-24"
+    }
+  ],
+  "setup": {
+    "cadence": "every 3 hours",
+    "referral": "off",
+    "package_format": "html",
+    "school": "Arizona State University",
+    "connectors": "email, linkedin"
+  },
+  "bank": [
+    {"name": "Campus Eats", "did": "Built an ordering page for late-night dining", "result": "200 students used it"},
+    {"name": "Shuttle Map", "did": "Mapped the campus shuttle stops", "result": "Posted the map for the hall"}
+  ]
+}
