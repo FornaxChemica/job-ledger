@@ -8,4 +8,4 @@ Live remotion.dev docs returned the same 403. Official Remotion 4.0.538 npm pack
 
 No suitable licensed natural TTS voice or speech tool is available; the required text/music film proceeds without voiceover. No paid API credential is requested.
 
-The supplied logo is visible in chat but has no downloadable source path in the workspace at the start of production. The original is requested while independent work proceeds. Do not redraw it approximately. Asset manifest records whether it was supplied before delivery.
+The logo initially had no downloadable source path. The user subsequently uploaded the original JPEG to `video/public/brand/download.jpeg` on `launch-film`; the final film uses this exact source. Asset manifest records the preserved original, SHA-256, and crop geometry.

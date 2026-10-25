@@ -11,7 +11,7 @@
 
 ## Brand
 
-The provided blue symbol was inspected visually in chat, but the original downloadable bytes were unavailable at production start. `public/brand/manifest.json` records the final asset status. No approximation of the symbol has been drawn. Until the original is supplied, the render uses a conventional gray contact initial and a text wordmark. That is a known brand-fidelity limitation, not an alternate official logo.
+The user supplied `public/brand/download.jpeg` through GitHub commit `ff14353`. This is the original 362 × 352 image containing the blue symbol, white circular avatar, and dark surround. `cubbie-original.jpeg` preserves its bytes exactly. `cubbie-avatar.png` is the lossless 296 × 296 pixel crop at (30, 30, 326, 326); CSS clips the remaining dark corners into a circle. No redrawing, recoloring, stretching, or generative replacement was used. The logo is displayed below its native resolution in the Messages headers and end card. `manifest.json` records the original SHA-256 and crop geometry.
 
 ## Fonts
 
@@ -33,4 +33,4 @@ The provided blue symbol was inspected visually in chat, but the original downlo
 - Score builds into tailoring, ducks for the separate submission approval, and resolves on the end card. Final AAC loudness and true peak are measured in `deliverables/audio-verification.json`.
 - No voiceover is supplied: no suitable licensed natural voice was available. The film is designed to work on mute.
 
-Nothing was uploaded or published externally.
+The user authorized uploading the editable project and exports to the separate `launch-film` GitHub branch. No other distribution or publication was performed.

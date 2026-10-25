@@ -1,7 +1,7 @@
 import React from "react";
 import { Img, staticFile } from "remotion";
 // Set to true only after placing a crop of the actual supplied logo at this path.
-export const HAS_ORIGINAL_LOGO = false;
+export const HAS_ORIGINAL_LOGO = true;
 export const BrandAvatar: React.FC<{
   size?: number;
   style?: React.CSSProperties;

@@ -10,7 +10,7 @@
     "audio": null,
     "fast_start": true,
     "full_decode": "passed",
-    "bytes": 6849093,
+    "bytes": 6916062,
     "black_frames": "none detected (0.10s threshold)"
   },
   "job-ledger-launch-1080x1920.mp4": {
@@ -24,7 +24,7 @@
     "audio": "aac",
     "fast_start": true,
     "full_decode": "passed",
-    "bytes": 8315237,
+    "bytes": 8382206,
     "black_frames": "none detected (0.10s threshold)",
     "audio_measurement": {
       "integrated_lufs": -14.31,

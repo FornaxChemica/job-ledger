@@ -2,7 +2,7 @@
 
 43 seconds · 1080 × 1920 · 60 fps. A Remotion/React/TypeScript production project separate from the Job Ledger runtime. The storyline is an explicitly labeled illustrative demonstration, with one fictional student, one employer, and separate package/submission approvals.
 
-**Brand asset status:** the original logo image is visible in chat but not available as a downloadable source file. Current exports use a gray contact initial and Cubbie text, with no invented replacement symbol. Supply the original PNG to complete exact branding; see `public/brand/manifest.json`.
+**Brand asset status:** the supplied Cubbie logo is integrated in the Messages headers and closing card. The original JPEG is preserved byte-for-byte; the avatar is a lossless crop with a circular display mask. Geometry and colors are unchanged. See `public/brand/manifest.json`.
 
 ## Download and watch
 
@@ -36,7 +36,7 @@ The existing prepared Studio process may need restarting in a new task; processe
 
 ## Deliverables
 
-These are technically verified review exports; exact logo integration is still pending. See `docs/delivery-report.md` for measured results and remaining limitations.
+These are technically verified exports with the supplied Cubbie logo integrated. See `docs/delivery-report.md` for measured results and remaining limitations.
 
 - `deliverables/job-ledger-launch-1080x1920.mp4` — score and sound design.
 - `deliverables/job-ledger-launch-silent.mp4` — video-only silent version.
@@ -70,4 +70,4 @@ python3 -m venv .audio-venv
 
 The official Remotion skills are installed under `.agents/skills/`. Read `.agents/skills/remotion-best-practices/SKILL.md` and the relevant references before extending the film. All fonts/images are local and preloaded by Remotion. Animation is deterministic; there are no CSS transitions, wall-clock timers or unseeded visual randomness.
 
-Nothing is published automatically. This project and the review exports are included on the user-authorized `launch-film` branch for download. The exact supplied logo is the outstanding brand asset; do not describe the current render as brand-complete until it is integrated.
+Nothing is published automatically. This project and the review exports are included on the user-authorized `launch-film` branch for download. The original supplied logo, prepared crop, and provenance are included.

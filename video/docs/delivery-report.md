@@ -1,6 +1,6 @@
 # Render and verification report
 
-Both review exports are rendered and technically verified. Exact branding remains incomplete because the supplied logo's original downloadable file is unavailable. Current exports use a neutral contact initial and Cubbie text; no replacement symbol was invented.
+Both exports include the original supplied Cubbie logo in the Messages headers and closing card. The white avatar circle, symbol geometry, and colors are preserved. Source and crop provenance are recorded in `public/brand/manifest.json`.
 
 | Check | Result |
 |---|---|
@@ -23,15 +23,16 @@ Both review exports are rendered and technically verified. Exact branding remain
 
 Visual inspection covered the full draft and final timeline at half-second intervals, representative 1080p frames, and phone-size contact sheets. Corrected font fallback, review-page scroll framing, native time labels, and attachment-origin continuity. The signature sequence traces Python from the role to supplied evidence to resume wording. Package approval and submission approval are separate; sample receipt precedes the Applied dashboard row. No simulated login, invented score, guaranteed outcome, contact information or grades appear.
 
+The logo update was checked in eight representative full-resolution frames, including the opening and end card, then rerendered at 1080 × 1920 / 60 fps. The original logo and prepared crop were inspected visually and compared pixel-for-pixel.
+
 The opening hook and Cubbie context are visible immediately. The resolved final brand/CTA holds from approximately 38.85 to 43 seconds. No cursor, Android navigation, permanent in-thread dashboard, unseeded animation or final safe-guide overlay is present. Phone cropping in the opening is intentional.
 
 Music and sound effects are original procedural synthesis. Audio was measured and decoded; an audio-audition channel was not available, so a subjective listening review is not claimed. A first AAC encode peaked at −0.99 dBTP; the delivered encode includes 0.3 dB additional headroom and passes the requested ceiling.
 
 ## Remaining limitations
 
-- Exact Cubbie logo integration needs the original PNG. `scripts/prepare-logo.py` and `public/brand/manifest.json` provide the handoff. Do not treat the current review exports as brand-complete launch masters.
 - YouTube references, Apple references and live Remotion docs were blocked by the network proxy. The videos were not watched. UI is an explicitly documented iOS 18-style reconstruction, not verified latest-release iOS.
 - No suitable natural licensed voice was available. No optional voiceover export or SRT was generated.
-- The user subsequently authorized transfer through a separate `launch-film` GitHub branch. This directory and the review exports are prepared for that branch; existing runtime files are unchanged.
+- The user subsequently authorized transfer through a separate `launch-film` GitHub branch. This directory and the exports are included on that branch; existing runtime files are unchanged.
 
 Primary edits: copy in `src/data/conversation.ts` / `sampleProfile.ts`, pacing in `src/data/storyboard.ts` and scene timings, audio in `src/data/audio.json`. See README for install, preview, draft, final, and regeneration commands.

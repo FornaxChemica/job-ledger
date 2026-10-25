@@ -1,7 +1,17 @@
 {
-  "original": null,
-  "prepared": null,
-  "status": "Original logo visible in chat but unavailable as a downloadable file. Awaiting source PNG; never redraw the symbol.",
-  "fallback": "Neutral system-style contact initial, not a replacement Cubbie logo. Text wordmark in end card.",
-  "expectedPreparedPath": "brand/cubbie-avatar.png"
+  "original": "brand/cubbie-original.jpeg",
+  "uploaded_source": "brand/download.jpeg",
+  "prepared": "brand/cubbie-avatar.png",
+  "status": "Prepared from the actual supplied image, without redrawing or recoloring. Circular CSS mask preserves intentional white avatar.",
+  "source_sha256": "57da9f736cf087549fbb0283bda2f4c965bcfa093983526f6d90bdf4fbf87387",
+  "original_size": [
+    362,
+    352
+  ],
+  "crop": [
+    30,
+    30,
+    326,
+    326
+  ]
 }
