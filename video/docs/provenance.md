@@ -34,3 +34,7 @@ The user supplied `public/brand/download.jpeg` through GitHub commit `ff14353`. 
 - No voiceover is supplied: no suitable licensed natural voice was available. The film is designed to work on mute.
 
 The user authorized uploading the editable project and exports to the separate `launch-film` GitHub branch. No other distribution or publication was performed.
+
+## Promotional teaser
+
+`deliverables/job-ledger-teaser.png` is a separate AI-generated promotional image, created with the supplied Cubbie logo as a visual reference. It is not a frame from the Remotion film. The generated phone interface is illustrative. Original generation output is retained in the working environment.
