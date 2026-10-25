@@ -20,4 +20,4 @@ For each source, record the employer, the official job URL, and the job id descr
 
 ## Apply routes
 
-Fill the form on the official applicant page the posting uses. Step-by-step support is LinkedIn, Handshake, Greenhouse, Lever, and Ashby. Any other form, a captcha, or a two-factor prompt: fill what matches, hand the browser to the student, and wait. Do not submit on any route until they approve the filled package.
+Greenhouse, Lever, and Ashby are applicant pages for one posting, not accounts to connect during setup. Fill the form on the official applicant page the posting uses. Step-by-step support is LinkedIn, Handshake, Greenhouse, Lever, and Ashby. Any other form, a captcha, or a two-factor prompt: fill what matches, hand the browser to the student, and wait. Do not submit on any route until they approve the filled package.

@@ -1,0 +1,13 @@
+{
+  "demo": true,
+  "stage": "Ready for the first role",
+  "confirmed": [
+    "Profile confirmed",
+    "Optional connections skipped",
+    "One review page",
+    "Referrals off",
+    "Notifications off"
+  ],
+  "next": "Review the Northwind Labs role.",
+  "reply": "Reply with a job link, or say review Northwind Labs."
+}

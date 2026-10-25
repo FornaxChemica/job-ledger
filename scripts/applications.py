@@ -13,8 +13,11 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import re
 import sys
 from pathlib import Path
+
+from visual_theme import CONFIRMATION_SOURCES, CONNECTION_STATUSES, STAGES
 
 STATUSES = {
     "skipped",
@@ -30,6 +33,8 @@ STATUSES = {
     "offer",
 }
 SKIP = {"skipped", "not a fit", "applied"}
+NOTIFICATIONS = {"off", "on"}
+CONNECTION_NAME = re.compile(r"[a-z0-9][a-z0-9_-]{0,40}")
 SAMPLE = Path(__file__).resolve().parent.parent / "assets" / "sample_applications.json"
 
 
@@ -134,6 +139,15 @@ def command_upsert(args: argparse.Namespace, state: dict) -> None:
         role["overleaf_url"] = args.overleaf_url
     if args.confirmation is not None:
         role["confirmation"] = args.confirmation
+    if args.role:
+        role["role"] = args.role
+    if args.location:
+        role["location"] = args.location
+    if args.confirmation_source:
+        source = args.confirmation_source.strip().casefold()
+        if source not in CONFIRMATION_SOURCES:
+            fail("Confirmation source must be employer, user_reported, or sample.", 2)
+        role["confirmation_source"] = source
     if args.updated:
         role["updated"] = args.updated
     emit({"saved": True, "role": role, "same_company_count": company_count(state, args.employer)})
@@ -141,11 +155,51 @@ def command_upsert(args: argparse.Namespace, state: dict) -> None:
 
 def command_save_setup(args: argparse.Namespace, state: dict) -> None:
     setup = state["setup"]
-    for field in ("cadence", "referral", "package_format", "school", "connectors", "resume_tool"):
+    for field in ("cadence", "referral", "package_format", "school", "connectors", "resume_tool", "stage", "notifications"):
         value = getattr(args, field)
-        if value:
-            setup[field] = value
+        if not value:
+            continue
+        if field == "stage" and value not in STAGES:
+            fail("Stage must be background, connections, or ready.", 2)
+        if field == "notifications" and value not in NOTIFICATIONS:
+            fail("Notifications must be off or on.", 2)
+        setup[field] = value
+    if args.profile_file:
+        try:
+            profile = json.loads(Path(args.profile_file).read_text())
+        except (OSError, ValueError):
+            fail("The profile file is missing or is not JSON.", 2)
+        if not isinstance(profile, dict):
+            fail("The profile file must be a JSON object.", 2)
+        setup["profile"] = profile
     emit({"saved": True, "setup": setup})
+
+
+def command_set_connection(args: argparse.Namespace, state: dict) -> None:
+    name = args.name.strip().casefold()
+    status = args.status.strip().casefold()
+    if not CONNECTION_NAME.fullmatch(name):
+        fail("Connection name must be letters, numbers, or hyphens.", 2)
+    if status not in CONNECTION_STATUSES:
+        fail("Status must be one of: " + ", ".join(sorted(CONNECTION_STATUSES)) + ".", 2)
+    checked = (args.checked_at or "").strip()
+    if status == "connected" and not checked:
+        fail("Connected requires the time the access check succeeded.", 2)
+    connections = setup_connections(state)
+    entry = {"status": status}
+    if checked:
+        entry["checked_at"] = checked
+    connections[name] = entry
+    emit({"saved": True, "connection": {"name": name, **entry}, "setup": state["setup"]})
+
+
+def setup_connections(state: dict) -> dict:
+    setup = state["setup"]
+    connections = setup.get("connections")
+    if not isinstance(connections, dict):
+        connections = {}
+        setup["connections"] = connections
+    return connections
 
 
 def command_show_setup(state: dict) -> None:
@@ -190,6 +244,9 @@ def build_parser() -> argparse.ArgumentParser:
     upsert.add_argument("--package-url", default="")
     upsert.add_argument("--overleaf-url", default="")
     upsert.add_argument("--confirmation", default=None)
+    upsert.add_argument("--role", default="")
+    upsert.add_argument("--location", default="")
+    upsert.add_argument("--confirmation-source", default="")
     upsert.add_argument("--updated", default="")
 
     setup = sub.add_parser("save-setup")
@@ -199,6 +256,14 @@ def build_parser() -> argparse.ArgumentParser:
     setup.add_argument("--school", default="")
     setup.add_argument("--connectors", default="")
     setup.add_argument("--resume-tool", default="")
+    setup.add_argument("--stage", default="")
+    setup.add_argument("--notifications", default="")
+    setup.add_argument("--profile-file", default="")
+
+    connection = sub.add_parser("set-connection")
+    connection.add_argument("--name", required=True)
+    connection.add_argument("--status", required=True)
+    connection.add_argument("--checked-at", default="")
 
     sub.add_parser("show-setup")
 
@@ -234,6 +299,8 @@ def main() -> None:
             command_save_setup(args, state)
         elif args.command == "save-bank":
             command_save_bank(args, state)
+        elif args.command == "set-connection":
+            command_set_connection(args, state)
         print("Sample mode wrote nothing.", file=sys.stderr)
         return
 
@@ -243,6 +310,8 @@ def main() -> None:
         command_save_setup(args, state)
     elif args.command == "save-bank":
         command_save_bank(args, state)
+    elif args.command == "set-connection":
+        command_set_connection(args, state)
     save_file(path, state)
 
 

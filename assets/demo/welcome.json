@@ -1,0 +1,8 @@
+{
+  "demo": true,
+  "stage": "Your background",
+  "value": "Screen a role, prepare one package, and submit only after you approve it.",
+  "confirmed": [],
+  "next": "Send a resume and a job link.",
+  "reply": "Reply with your resume and a job link."
+}

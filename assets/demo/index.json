@@ -1,0 +1,49 @@
+{
+  "demo": true,
+  "generated_at": "2026-10-24T17:40:00-07:00",
+  "roles": [
+    {
+      "employer": "Northwind Labs",
+      "role": "Software engineering intern",
+      "namespace": "greenhouse",
+      "job_id": "1842",
+      "status": "applied",
+      "url": "https://careers.northwindlabs.example/jobs/1842",
+      "package_url": "06-package.html",
+      "quote": "Coursework or a personal project in Python is welcome",
+      "section": "Minimum qualifications",
+      "confirmation": "Application received. Reference NW-1842.",
+      "confirmation_source": "sample",
+      "updated": "2026-10-24T17:30:00-07:00"
+    },
+    {
+      "employer": "Lumen Field",
+      "role": "Backend intern",
+      "namespace": "url",
+      "job_id": "https://careers.lumenfield.example/jobs/77",
+      "status": "need to check",
+      "url": "https://careers.lumenfield.example/jobs/77",
+      "quote": "Must be authorized to work in the United States",
+      "section": "Eligibility",
+      "updated": "2026-10-24T16:10:00-07:00"
+    },
+    {
+      "employer": "Harbor Post",
+      "role": "Software engineering intern",
+      "namespace": "lever",
+      "job_id": "hp-220",
+      "status": "kit ready",
+      "url": "https://jobs.harborpost.example/jobs/hp-220",
+      "updated": "2026-10-24T15:05:00-07:00"
+    },
+    {
+      "employer": "Brookline Studio",
+      "role": "Data intern",
+      "namespace": "ashby",
+      "job_id": "bs-19",
+      "status": "interview",
+      "url": "https://jobs.brooklinestudio.example/jobs/bs-19",
+      "updated": "2026-10-23T11:00:00-07:00"
+    }
+  ]
+}

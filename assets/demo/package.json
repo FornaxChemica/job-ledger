@@ -1,0 +1,149 @@
+{
+  "demo": true,
+  "employer": "Northwind Labs",
+  "role": "Software engineering intern",
+  "verdict": "Worth considering",
+  "status": "kit ready",
+  "location": "Remote, United States",
+  "link": "https://careers.northwindlabs.example/jobs/1842",
+  "quote": "Coursework or a personal project in Python is welcome",
+  "section": "Minimum qualifications",
+  "updated": "2026-10-24T17:20:00-07:00",
+  "fit": [
+    {
+      "requirement": "Coursework or a personal project in Python",
+      "state": "supported",
+      "evidence": "Campus Eats: Built an ordering page for late-night dining. 200 students used it.",
+      "source": "Resume, confirmed by Maya Chen"
+    },
+    {
+      "requirement": "Intern timeline",
+      "state": "supported",
+      "evidence": "B.S. Computer Science, Arizona State University, expected May 2027",
+      "source": "Profile, confirmed by Maya Chen"
+    },
+    {
+      "requirement": "Work authorization",
+      "state": "needs_confirmation",
+      "evidence": "Not stated on the resume.",
+      "source": "Resume"
+    }
+  ],
+  "changes": "Campus Eats leads the project section so the Python work in the posting is the first thing on the page. Coursework sits under education. Work authorization is still open.",
+  "resume_doc": {
+    "name": "Maya Chen",
+    "contact": "Tempe, Arizona · maya.chen@example.edu",
+    "sections": [
+      {
+        "title": "Education",
+        "entries": [
+          {
+            "title": "Arizona State University",
+            "aside": "Tempe, Arizona",
+            "subtitle": "B.S. Computer Science",
+            "when": "Expected May 2027",
+            "bullets": [
+              "Relevant coursework: Data Structures and Algorithms, Database Systems, and Web Development.",
+              "The Database Systems course is where the SQL on Campus Eats came from. Web Development is where the ordering page came from."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Technical skills",
+        "lines": [
+          "Languages: Python, JavaScript, SQL",
+          "Used on a project: a browser page, a Python server, and a SQL store of orders"
+        ]
+      },
+      {
+        "title": "Projects",
+        "entries": [
+          {
+            "title": "Campus Eats",
+            "aside": "2025–2026",
+            "subtitle": "Python, JavaScript, SQL",
+            "when": "Personal project",
+            "bullets": [
+              "Built an ordering page for late-night dining so a student could place an order without calling the hall desk.",
+              "Python records the order, SQL stores it, and the kitchen sees a list of what to prepare.",
+              "200 students used it."
+            ]
+          },
+          {
+            "title": "Shuttle Map",
+            "aside": "2025",
+            "subtitle": "JavaScript",
+            "when": "Personal project",
+            "bullets": [
+              "Mapped the campus shuttle stops for the residence hall.",
+              "Posted the map for the hall so students could see which stop to use."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "cover_doc": {
+    "name": "Maya Chen",
+    "contact_left": "Tempe, Arizona",
+    "contact_right": "maya.chen@example.edu",
+    "date": "October 24, 2026",
+    "salutation": "Dear Northwind Labs team,",
+    "paragraphs": [
+      "I am applying for the software engineering intern role. I am a computer science student at Arizona State University in Tempe, and I expect to graduate in May 2027. Your posting says coursework or a personal project in Python is welcome. That is the work I can show.",
+      "Campus Eats is an ordering page I built for late-night dining. A student places an order in the browser. Python records it, SQL stores it, and the kitchen sees a list of what to prepare. 200 students used it. It is the project I would want a reviewer to read first, because it is the Python work your posting asks about.",
+      "Shuttle Map is the other project. I mapped the campus shuttle stops and posted the map for the hall. It is smaller than Campus Eats. It is the same kind of work: a page people in the hall actually opened.",
+      "I can start in May 2027, when I graduate. Work authorization is not on my resume, so that question is still open and I have not answered it here. I would like to talk about the ordering page and whether it matches the intern work."
+    ],
+    "close": "Sincerely,",
+    "signature": "Maya Chen"
+  },
+  "prepared_answers": [
+    {
+      "q": "Why are you interested in this role?",
+      "a": "Northwind Labs says coursework or a personal project in Python is welcome. I built Campus Eats, an ordering page for late-night dining, with Python, JavaScript, and SQL. 200 students used it. I am finishing a B.S. in Computer Science at Arizona State University in May 2027, and I can start then."
+    },
+    {
+      "q": "Describe a project you built.",
+      "a": "Campus Eats is a page for late-night dining. A student places an order in the browser. Python records it, SQL stores it, and the kitchen sees a list of what to prepare. 200 students used it. Shuttle Map is the other one: I mapped the campus shuttle stops and posted the map for the hall."
+    },
+    {
+      "q": "What is your degree, and when do you expect to graduate?",
+      "a": "B.S. Computer Science, Arizona State University. Expected May 2027."
+    },
+    {
+      "q": "What is your earliest start date?",
+      "a": "May 2027."
+    },
+    {
+      "q": "Where are you based, and can you work remotely in the United States?",
+      "a": "I am in Tempe, Arizona. This role is remote in the United States, which matches where I can work."
+    },
+    {
+      "q": "How did you hear about this role?",
+      "a": "I brought the posting to Job Ledger. No referral is on file."
+    },
+    {
+      "q": "Are you legally authorized to work for any employer in the United States?",
+      "note": "Not stated on the resume or in the profile. Leave this blank. Do not guess yes or no."
+    },
+    {
+      "q": "Will you now or in the future require employment visa sponsorship?",
+      "note": "Not stated. Leave this blank until Maya answers it herself."
+    },
+    {
+      "q": "Portfolio, GitHub, LinkedIn, or personal site",
+      "note": "No link was provided. Do not invent a profile URL."
+    }
+  ],
+  "attachments": ["Resume text is included in this page. A PDF file was not provided."],
+  "missing": ["Work authorization", "Visa sponsorship", "Portfolio link"],
+  "return_copy": "Return to Cubbie and reply 'use this package'.",
+  "approval": {
+    "package": "Waiting for you",
+    "form": "Not filled",
+    "submit": "Not approved",
+    "confirmed": "No"
+  }
+}

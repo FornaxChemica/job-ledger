@@ -1,0 +1,24 @@
+{
+  "demo": true,
+  "reply": "Reply with any corrections, or say this looks right.",
+  "profile": {
+    "name": "Maya Chen",
+    "education": "B.S. Computer Science, Arizona State University, expected May 2027",
+    "targets": "Software engineering intern",
+    "location": "Tempe, Arizona, or remote in the US",
+    "skills": ["Python", "JavaScript", "SQL"],
+    "evidence": [
+      {
+        "name": "Campus Eats",
+        "did": "Built an ordering page for late-night dining",
+        "result": "200 students used it"
+      },
+      {
+        "name": "Shuttle Map",
+        "did": "Mapped the campus shuttle stops",
+        "result": "Posted the map for the hall"
+      }
+    ],
+    "missing": ["Work authorization is not stated"]
+  }
+}

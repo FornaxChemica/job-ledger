@@ -3,54 +3,53 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{EMPLOYER}} {{ROLE}}</title>
+  <title>{{TITLE}}</title>
   <style>
-    body { font-family: Georgia, serif; margin: 0; background: #f6f4ef; color: #1c1a17; }
-    main { max-width: 40rem; margin: 0 auto; padding: 1.5rem 1.25rem 3rem; }
-    h1 { font-size: 1.6rem; line-height: 1.2; margin: 0 0 0.25rem; }
-    h2 { font-size: 1rem; letter-spacing: 0.04em; text-transform: uppercase; margin: 1.6rem 0 0.4rem; }
-    .verdict { font-weight: bold; }
-    blockquote { margin: 0.6rem 0; padding-left: 0.8rem; border-left: 3px solid #1c1a17; }
-    a { color: #1c1a17; }
-    pre { white-space: pre-wrap; font-family: inherit; margin: 0; }
-    li { margin: 0.25rem 0; }
+{{STYLE}}
   </style>
 </head>
-<body>
-<main>
-  <p class="verdict">{{VERDICT}}</p>
-  <h1>{{EMPLOYER}}</h1>
-  <p>{{ROLE}}</p>
-  <blockquote>
-    <p>{{QUOTE}}</p>
-    <p>{{SECTION}}</p>
-  </blockquote>
-  <p><a href="{{LINK}}">{{LINK}}</a></p>
+<body class="packet">
+  <a class="skip" href="#overview">Skip to the application</a>
+  <header class="topbar">
+    <p class="brand">Job Ledger</p>
+    <p class="top-meta">{{TOPMETA}}</p>
+  </header>
+  <main>
+    <header class="mast">
+      <p class="eyebrow">Application review</p>
+      <h1>{{EMPLOYER}}</h1>
+      <p class="role">{{SUBTITLE}}</p>
+      <p class="lede">The posting, the evidence, and the documents in one place. This page does not submit the application.</p>
+    </header>
+    {{NAV}}
 
-  <section data-section="answers">
-    <h2>Answers</h2>
-    {{ANSWERS}}
-  </section>
+    <section id="overview" data-section="overview">
+      {{OVERVIEW}}
+    </section>
 
-  <section data-section="resume">
-    <h2>Resume</h2>
-    <pre>{{RESUME}}</pre>
-  </section>
+    <section id="fit" data-section="fit">
+      {{FIT}}
+    </section>
 
-  <section data-section="cover">
-    <h2>Cover letter</h2>
-    <pre>{{COVER}}</pre>
-  </section>
+    <section id="documents" data-section="documents">
+      {{DOCUMENTS}}
+    </section>
 
-  <section data-section="fields">
-    <h2>Filled form</h2>
-    {{FIELDS}}
-  </section>
+    <section id="answers" data-section="answers">
+      {{ANSWERS}}
+    </section>
 
-  <section data-section="confirmation">
-    <h2>Confirmation</h2>
-    <pre>{{CONFIRMATION}}</pre>
-  </section>
-</main>
+    <section id="fields" data-section="fields">
+      {{FIELDS}}
+    </section>
+
+    <section id="review" data-section="review">
+      {{REVIEW}}
+    </section>
+
+    <section id="confirmation" data-section="confirmation">
+      {{CONFIRMATION}}
+    </section>
+  </main>
 </body>
 </html>

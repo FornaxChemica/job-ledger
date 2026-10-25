@@ -1,0 +1,13 @@
+{
+  "demo": true,
+  "connectors": "",
+  "reply": "Reply with a connection to add, or say continue.",
+  "connections": {
+    "email": {"status": "skipped"},
+    "drive": {"status": "skipped"},
+    "canvas": {"status": "skipped"},
+    "notion": {"status": "skipped"},
+    "overleaf": {"status": "skipped"},
+    "linkedin": {"status": "skipped"}
+  }
+}
