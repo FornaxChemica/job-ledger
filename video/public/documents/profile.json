@@ -1,0 +1,17 @@
+{
+  "demo": true,
+  "profile": {
+    "name": "Maya Chen",
+    "education": "B.S. Computer Science, Arizona State University, expected May 2027",
+    "skills": [
+      "Python"
+    ],
+    "evidence": [
+      {
+        "name": "Campus Dining",
+        "did": "Built a Python tool to organize campus dining data for comparison.",
+        "result": "A comparison tool; no usage metric claimed."
+      }
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "job-ledger-launch-silent.mp4": {
+    "width": 1080,
+    "height": 1920,
+    "fps": "60/1",
+    "frames": "2580",
+    "duration": "43.000000",
+    "video": "h264",
+    "pixel_format": "yuv420p",
+    "audio": null,
+    "fast_start": true,
+    "full_decode": "passed",
+    "bytes": 6849093,
+    "black_frames": "none detected (0.10s threshold)"
+  },
+  "job-ledger-launch-1080x1920.mp4": {
+    "width": 1080,
+    "height": 1920,
+    "fps": "60/1",
+    "frames": "2580",
+    "duration": "43.000000",
+    "video": "h264",
+    "pixel_format": "yuv420p",
+    "audio": "aac",
+    "fast_start": true,
+    "full_decode": "passed",
+    "bytes": 8315237,
+    "black_frames": "none detected (0.10s threshold)",
+    "audio_measurement": {
+      "integrated_lufs": -14.31,
+      "true_peak_dbtp": -1.51,
+      "lra": 4.0
+    }
+  }
+}

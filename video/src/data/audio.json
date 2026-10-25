@@ -1,0 +1,30 @@
+{
+  "sampleRate": 48000,
+  "duration": 43,
+  "tempo": 112,
+  "seed": 1842,
+  "musicGain": 0.9,
+  "effectsGain": 0.8,
+  "approvalDuck": { "start": 28.5, "end": 34, "gain": 0.34 },
+  "cues": [
+    [0.65, "send"],
+    [3.25, "paper"],
+    [4.25, "receive"],
+    [5.0, "receive"],
+    [7.85, "receive"],
+    [8.55, "paper"],
+    [11.15, "send"],
+    [12.5, "expand"],
+    [15.0, "tick"],
+    [17.65, "paper"],
+    [20.0, "resolve"],
+    [22.1, "receive"],
+    [23.5, "expand"],
+    [27.0, "send"],
+    [28.8, "receive"],
+    [31.75, "send"],
+    [34.4, "resolve"],
+    [36.1, "paper"],
+    [38.8, "resolve"]
+  ]
+}

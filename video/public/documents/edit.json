@@ -1,0 +1,21 @@
+{
+  "allowed_facts": "Maya Chen. Arizona State University. B.S. Computer Science. May 2027. Python. Data Structures. Databases. Built a Python tool to organize campus dining data for comparison. No professional experience claimed.",
+  "bank_projects": [
+    "Campus Dining"
+  ],
+  "must_include": [
+    "Python"
+  ],
+  "resume_slots": {
+    "NAME": "Maya Chen",
+    "CONTACT": "Fictional sample profile.",
+    "SUMMARY": "Computer science student with a Python project.",
+    "EDUCATION": "B.S. Computer Science, Arizona State University. Expected May 2027. Coursework: Data Structures and Databases.",
+    "EXPERIENCE": "\\item Academic and personal projects only.",
+    "PROJECTS": "\\item Campus Dining: Built a Python tool to organize campus dining data for comparison."
+  },
+  "cover_slots": {
+    "ROLE": "I am applying for the software engineering intern role at Northwind Labs.",
+    "BODY": "My Campus Dining project uses Python to organize campus dining data for comparison. I would welcome the opportunity to discuss this project with your team."
+  }
+}

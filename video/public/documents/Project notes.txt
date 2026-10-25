@@ -1,0 +1,4 @@
+FICTIONAL SAMPLE — MAYA CHEN
+Campus Dining
+Built a Python tool to organize campus dining data for comparison.
+Student confirmed this work in the illustrative fixture.

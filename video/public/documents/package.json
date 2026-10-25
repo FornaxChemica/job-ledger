@@ -1,0 +1,64 @@
+{
+  "demo": true,
+  "employer": "Northwind Labs",
+  "role": "Software engineering intern",
+  "location": "Remote, United States",
+  "status": "kit ready",
+  "verdict": "Worth considering",
+  "quote": "Coursework or a personal project in Python is welcome.",
+  "section": "Minimum qualifications",
+  "fit": [
+    {
+      "requirement": "Python",
+      "state": "supported",
+      "evidence": "Built a Python tool to organize campus dining data for comparison.",
+      "source": "Supplied project notes"
+    }
+  ],
+  "resume_doc": {
+    "name": "Maya Chen",
+    "sections": [
+      {
+        "title": "Education",
+        "lines": [
+          "B.S. Computer Science \u00b7 Arizona State University",
+          "Expected May 2027 \u00b7 Data Structures, Databases"
+        ]
+      },
+      {
+        "title": "Projects",
+        "entries": [
+          {
+            "title": "Campus Dining",
+            "subtitle": "Python \u00b7 Personal project",
+            "bullets": [
+              "Built a Python tool to organize campus dining data for comparison."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "cover_doc": {
+    "name": "Maya Chen",
+    "salutation": "Dear Northwind Labs team,",
+    "paragraphs": [
+      "I am applying for the software engineering intern role. My Campus Dining project uses Python to organize dining data for comparison. I would welcome the opportunity to bring that project experience to your team."
+    ],
+    "close": "Sincerely,",
+    "signature": "Maya Chen"
+  },
+  "prepared_answers": [
+    {
+      "q": "Earliest start",
+      "a": "May 2027."
+    }
+  ],
+  "approval": {
+    "package": "Waiting for you",
+    "form": "Not filled",
+    "submit": "Not approved",
+    "confirmed": "No"
+  },
+  "return_copy": "Return to Cubbie and reply 'use this package'."
+}

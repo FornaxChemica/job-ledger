@@ -1,0 +1,6 @@
+node_modules/
+output/
+.audio-venv/
+.browser-cache/
+__pycache__/
+.npm-cache/
